@@ -45,11 +45,12 @@
 // For ST7789 and ILI9341 ONLY, define the colour order IF the blue and red are swapped on your display
 // Try ONE option at a time to find the correct colour order for your display
 
-  #define TFT_RGB_ORDER TFT_RGB  // Colour order Red-Green-Blue
+#define TFT_RGB_ORDER TFT_RGB  // Colour order Red-Green-Blue
 //  #define TFT_RGB_ORDER TFT_BGR  // Colour order Blue-Green-Red
 
 // For M5Stack ESP32 module with integrated ILI9341 display ONLY, remove // in line below
 
+// 
 #define M5STACK
 
 // For ST7789, ST7735 and ILI9163 ONLY, define the pixel width and height in portrait orientation
@@ -167,14 +168,14 @@
 // The hardware SPI can be mapped to any pins
 
 // Marauder Mini
-//#define TFT_CS   5  // Chip select control pin D8
-//#define TFT_DC   23  // Data Command control pin
-//#define TFT_RST  18  // Reset pin (could connect to NodeMCU RST, see next line)
-//#define TOUCH_CS 10
+#define TFT_CS   5  // Chip select control pin D8
+#define TFT_DC   23  // Data Command control pin
+#define TFT_RST  18  // Reset pin (could connect to NodeMCU RST, see next line)
+#define TOUCH_CS 10
 //#define TFT_MISO 19
-//#define TFT_MOSI 15
-//#define TFT_SCLK 13
-//#define TFT_BL   10
+#define TFT_MOSI 15
+#define TFT_SCLK 13
+#define TFT_BL   10
 
 /*
 // ESP32 Marauder 
@@ -211,13 +212,13 @@
 //#define TFT_WR 22    // Write strobe for modified Raspberry Pi TFT only
 
 // For the M5Stack module use these #define lines
-#define TFT_MISO 19
-#define TFT_MOSI 23
-#define TFT_SCLK 18
-#define TFT_CS   14  // Chip select control pin
-#define TFT_DC   27  // Data Command control pin
-#define TFT_RST  33  // Reset pin (could connect to Arduino RESET pin)
-#define TFT_BL   32  // LED back-light (required for M5Stack)
+//#define TFT_MISO 19
+//#define TFT_MOSI 23
+//#define TFT_SCLK 18
+//#define TFT_CS   14  // Chip select control pin
+//#define TFT_DC   27  // Data Command control pin
+//#define TFT_RST  33  // Reset pin (could connect to Arduino RESET pin)
+//#define TFT_BL   32  // LED back-light (required for M5Stack)
 
 // ######       EDIT THE PINs BELOW TO SUIT YOUR ESP32 PARALLEL TFT SETUP        ######
 
